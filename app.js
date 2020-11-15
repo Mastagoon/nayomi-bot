@@ -31,6 +31,12 @@ bot.on("ready", () => {
 });
 
 bot.on("message", (message) => {
+    if(!message.author.bot) {
+        fs.appendFile('server-log.txt', message.author.username+" : "+message.content+"\n", function (err) {
+            if (err) throw err;
+            console.log('Saved!');
+        });
+    }
     if(Math.random() * 100 < 10 && !message.author.bot) {
         message.reply(messages[Math.floor(Math.random() * messages.length)])
     }
