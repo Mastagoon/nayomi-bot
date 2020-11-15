@@ -1,3 +1,7 @@
 /node_modules
 .env
+<<<<<<< HEAD
 server-log.txt
+=======
+server-log.txt
+>>>>>>> ae6647711588037649d8ff38215d811a0d91e340
