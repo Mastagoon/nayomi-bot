@@ -32,7 +32,9 @@ bot.on("ready", () => {
 
 bot.on("message", (message) => {
     if(!message.author.bot) {
-        fs.appendFile('server-log.txt', message.author.username+" : "+message.content+"\n", function (err) {
+        const d = new Date( timestamp );
+        date = d.getHours() + ":" + d.getMinutes() + ", " + d.toDateString();
+        fs.appendFile('server-log.txt', date+" "+message.channel+ " " +message.author.username+" : "+message.content+"\n", function (err) {
             if (err) throw err;
             console.log('Saved!');
         });
