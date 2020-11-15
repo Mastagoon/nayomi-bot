@@ -32,10 +32,12 @@ bot.on("ready", () => {
 
 bot.on("message", (message) => {
     if(!message.author.bot) {
-        const d = new Date( timestamp );
-        date = d.getHours() + ":" + d.getMinutes() + ", " + d.toDateString();
-        let channel = message.channel.type == "dm" ? "DM" : message.channel;
-        fs.appendFile('server-log.txt', date+" "+channel+ " " +message.author.username+" : "+message.content+"\n", function (err) {
+        const d = new Date();
+        date = "["+d.getHours() + ":" + d.getMinutes() + "], [" + d.toDateString()+"]";
+        let channel = message.channel.type == "dm" ? "DM" : message.channel.name;
+        let attachment = message.attachments;
+        let link = attachment.array()[0] ? attachment.array()[0].url+"\n" : ""
+        fs.appendFile('server-log.txt', date+" ["+channel+ "] [" +message.author.username+"] : "+message.content+"\n"+link, function (err) {
             if (err) throw err;
             console.log('Saved!');
         });
