@@ -34,7 +34,8 @@ bot.on("message", (message) => {
     if(!message.author.bot) {
         const d = new Date( timestamp );
         date = d.getHours() + ":" + d.getMinutes() + ", " + d.toDateString();
-        fs.appendFile('server-log.txt', date+" "+message.channel+ " " +message.author.username+" : "+message.content+"\n", function (err) {
+        let channel = message.channel.type == "dm" ? "DM" : message.channel;
+        fs.appendFile('server-log.txt', date+" "+channel+ " " +message.author.username+" : "+message.content+"\n", function (err) {
             if (err) throw err;
             console.log('Saved!');
         });
