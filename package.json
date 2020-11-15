@@ -1,0 +1,26 @@
+{
+  "name": "gay-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "discord-nsfw": "^1.2.1",
+    "discord.js": "^12.4.1",
+    "dotenv": "^8.2.0",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mastagoon/nayomi-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mastagoon/nayomi-bot/issues"
+  },
+  "homepage": "https://github.com/Mastagoon/nayomi-bot#readme"
+}
