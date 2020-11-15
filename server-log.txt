@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 file begins here.
 
+=======
+hahaso funny bro
+>>>>>>> ae6647711588037649d8ff38215d811a0d91e340
