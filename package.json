@@ -4,10 +4,14 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "@discordjs/opus": "^0.3.3",
     "discord-nsfw": "^1.2.1",
     "discord.js": "^12.4.1",
     "dotenv": "^8.2.0",
-    "fs": "^0.0.1-security"
+    "ffmpeg": "0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "^0.0.1-security",
+    "ytdl-core": "^4.0.5"
   },
   "devDependencies": {},
   "scripts": {
