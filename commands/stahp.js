@@ -4,13 +4,12 @@ const queue = new Map();
 
 
 
-
 const isMasta = (id) => {
     return id == "651501140386643969" ? true : false;
 }
 
 module.exports = {
-    name: "plyh",
+    name: "stahp",
     description: "plyhs you",
     execute(message, args) {
         const serverQueue = queue.get(message.guild.id);
