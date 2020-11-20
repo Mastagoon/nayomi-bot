@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "@discordjs/opus": "^0.3.3",
+    "axios": "^0.21.0",
     "discord-nsfw": "^1.2.1",
     "discord.js": "^12.4.1",
     "dotenv": "^8.2.0",
